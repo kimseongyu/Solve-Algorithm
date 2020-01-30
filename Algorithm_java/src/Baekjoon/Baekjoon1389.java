@@ -30,8 +30,8 @@ public class Baekjoon1389 {
 			visit = new boolean[user + 1];
 		}
 		for(int i = 1; i < user; i++) {
-			if(bacon[i] < bacon[i-1]) {
-				smallNum = i+1;
+			if(bacon[i] < bacon[smallNum-1]) {
+				smallNum = i+ 1;
 			}
 		}
 		System.out.println(smallNum);
