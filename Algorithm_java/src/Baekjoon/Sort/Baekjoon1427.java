@@ -1,4 +1,4 @@
-package Baekjoon;
+package Baekjoon.Sort;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package Baekjoon;
+package Baekjoon.Beginners;
 
 public class Baekjoon6376 {
 	public static void main(String[] args) {
