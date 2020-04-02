@@ -32,34 +32,23 @@ public class Baekjoon4948 {
 		}
 		return c;
 	}
-	
-//	public class Baekjoon4948 {
-//		public static void main(String[] args) {
-//			Scanner sc = new Scanner(System.in);
-//			int num = sc.nextInt();
-//			while (num != 0) {
-//				System.out.println(func(2 * num) - func(num));
-//				num = sc.nextInt();
-//			}
-//		}
-//
-//		public static int func(int n) {
-//			int c = 0;
-//			int i = 2;
-//			while (i <= n) {
-//				boolean a = true;
-//				for (int j = 2; j < i; j++) {
-//					if (i % j == 0) {
-//						a = false;
-//						break;
-//					}
+
+//	public static int func(int n) {
+//		int c = 0;
+//		int i = 2;
+//		while (i <= n) {
+//			boolean a = true;
+//			for (int j = 2; j < i; j++) {
+//				if (i % j == 0) {
+//					a = false;
+//					break;
 //				}
-//				if (a == true) {
-//					c++;
-//				}
-//				i++;
 //			}
-//			return c;
+//			if (a == true) {
+//				c++;
+//			}
+//			i++;
 //		}
+//		return c;
 //	}
 }
