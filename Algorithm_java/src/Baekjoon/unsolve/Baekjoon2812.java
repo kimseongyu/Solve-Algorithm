@@ -8,23 +8,23 @@ public class Baekjoon2812 {
 		
 		int n = sc.nextInt();
 		int k = sc.nextInt();
-		int i = 0;
 		String s = sc.next();
-		Queue<Character> q = new LinkedList<>();
-		q.offer(s.charAt(i++));
-		while(--n > 0) {
-			if(q.peek() > s.charAt(i)) {
-				i++;
+		Stack<Character> st = new Stack<>();
+		st.push(s.charAt(0));
+		for(int i = 1; i < n; i++) {
+			if(st.lastElement() < s.charAt(i)) {
+				st.pop();
 				k--;
-			}else {
-				q.offer(s.charAt(i++));
+			}
+			st.push(s.charAt(i));
+			if(k == 0) {
+				for(i = i+1; i < n; i++) {
+					st.push(s.charAt(i));
+				}
 			}
 		}
-		while(--k > 0) {
-			q.poll();
-		}
-		while(q.size() != 0) {
-			System.out.print(q.poll());
+		for(int i = 0; i < st.size()-k; i++) {
+			System.out.print(st.get(i));
 		}
 	}
 }
