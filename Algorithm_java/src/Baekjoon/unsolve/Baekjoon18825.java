@@ -1,4 +1,4 @@
-package Baekjoon.solve_15000;
+package Baekjoon.unsolve;
 
 import java.util.Scanner;
 
