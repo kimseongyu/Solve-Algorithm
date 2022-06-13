@@ -3,7 +3,7 @@ import sys
 def main():
     # 비트마스킹을 사용하여 집합으로 저장
     # 이진수의 2~21번째 , 20칸 사용하여 저장
-    # 1번째 칸은 연산을 편리하게 하기 위하여 사용하지 않는 칸 
+    # 1번째 칸은 연산을 위해 이용하는 칸
     s = 0x00000
     for i in range(int(sys.stdin.readline())):
         exp = sys.stdin.readline().split()
